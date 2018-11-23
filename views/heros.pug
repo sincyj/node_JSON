@@ -1,0 +1,14 @@
+extends layout
+
+block content
+	
+	each val in data
+		.row
+			.col.s12.m5
+				.card-panel.teal.lighten-2.z-depth-5
+					.card-content.white-text
+						.card-title
+							h3 #{val.superhero}
+							h6 first appeared in #{val.first_appearance}
+						p Real Name : #{val.alter_ego}
+						p Publisher : #{val.publisher}
